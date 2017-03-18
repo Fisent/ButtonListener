@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "375284734944",
+    "firebase_url": "https://buttondatabase.firebaseio.com",
+    "project_id": "buttondatabase",
+    "storage_bucket": "buttondatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375284734944:android:ab3afabfaf287989",
+        "android_client_info": {
+          "package_name": "lukzieniewicz.gmail.com.buttonlistener"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375284734944-0106nv06mkreu3b3prphl3iqshuul6d9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lukzieniewicz.gmail.com.buttonlistener",
+            "certificate_hash": "48a7267e67608b5220feb61b2bc66f4646cdd787"
+          }
+        },
+        {
+          "client_id": "375284734944-u134jrikbvkgp8tb0poa49f9c5cq56d0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4tpFILKf6fzaDGj4rHWHaDsyWr7-cgrY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375284734944-u134jrikbvkgp8tb0poa49f9c5cq56d0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
