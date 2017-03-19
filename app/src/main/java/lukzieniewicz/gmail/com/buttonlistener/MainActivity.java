@@ -1,7 +1,12 @@
 package lukzieniewicz.gmail.com.buttonlistener;
 
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -22,10 +27,22 @@ public class MainActivity extends AppCompatActivity {
         db = FirebaseDatabase.getInstance();
         myref = db.getReference();
 
+
+
         myref.addValueEventListener(new ValueEventListener() {
+
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                Toast t = Toast.makeText(getBaseContext(), "zmieniono", Toast.LENGTH_SHORT);
+                t.show();
 
+                try {
+                    Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                    Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
+                    r.play();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
 
             @Override
